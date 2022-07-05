@@ -1,0 +1,90 @@
+  @import '@/assets/scss/fonts';
+  @import '@/assets/scss/root';
+
+  // Базовые настройки
+  html {
+    margin: 0;
+    font-family: 'CircleRounded', sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    margin: 0;
+  }
+  section {
+    max-width: 1200px;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 1300px) {
+      max-width: 620px;
+      width: 620px;
+    }
+    @media screen and (max-width: 680px) {
+      max-width: 300px;
+      width: 300px;
+    }
+  }
+  .page {
+    padding-top: 130px;
+  }
+  h1 {
+    font-family: $title;
+    margin: 0;
+  }
+  h2 {
+    font-family: $title;
+    font-weight: 500;
+    margin: 0;
+  }
+  h3 {
+    font-family: $title;
+    margin: 0;
+  }
+  h4 {
+    font-family: $title;
+    margin: 0;
+  }
+  h5 {
+    font-family: $title;
+    margin: 0;
+  }
+  h6 {
+    font-family: $title;
+    font-weight: 400;
+    margin: 0;
+  }
+  p {
+    font-family: $text;
+    margin: 0;
+  }
+  a {
+    margin: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  *:focus {
+    outline-width: 0;
+    outline-style: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  /* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: $accent;
+  // box-shadow: inset 1px 1px 10px $accent;
+}
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background-color: #fff;
+// }
+
+// .block {}
